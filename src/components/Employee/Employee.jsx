@@ -13,7 +13,7 @@ function Employee() {
 
     const [visibility, setVisibility] = useState('none')
     const popEmployee = (id) => {
-        axios.get(`/api/employee/popEmp?id=${id}`)
+        axios.get(`https://employeebackend-ikfc.onrender.com/api/employee/popEmp?id=${id}`)
             .then((response) => {
                 popEmp(id)
                 console.log(response);

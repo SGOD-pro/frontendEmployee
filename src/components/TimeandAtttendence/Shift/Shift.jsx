@@ -21,7 +21,7 @@ function Shift() {
     theme: "dark",
 }
   const fetchByStatus = () => {
-    axios.get(`/api/timeAtt/getShift?query=${select.current.value}`)
+    axios.get(`https://employeebackend-ikfc.onrender.com/api/timeAtt/getShift?query=${select.current.value}`)
       .then(response => {
         if (!response.data.success) return;
         console.log(response.data.data);

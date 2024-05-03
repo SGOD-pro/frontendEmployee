@@ -31,12 +31,12 @@ function App() {
   const popShiftTableData = (idToDelete) => {
     const data = { id: idToDelete }
     setShiftTableData(prev => prev.filter(row => row.id !== idToDelete));
-    axios.get(`/api/timeAtt/popshift?query=${encodeURIComponent(idToDelete)}`)
+    axios.get(`https://employeebackend-ikfc.onrender.com/api/timeAtt/popshift?query=${encodeURIComponent(idToDelete)}`)
       .then(response => { response.data.success && toast.success(response.data.message, toastObj) })
       .catch(error => { toast.error("Internal server error.", toastObj) })
   }
   useEffect(() => {
-    axios.get("/api/employee/table-deitails")
+    axios.get("https://employeebackend-ikfc.onrender.com/api/employee/table-deitails")
       .then(response => {
         toast.success(response.data.message, toastObj);
         if (!response.data.success) return;
@@ -52,7 +52,7 @@ function App() {
     setShiftDetails(obj)
   }
   const popEmp = (id) => {
-    setEmpTableData(prev => prev.filter(item => item.id !== id))
+    setEmpTableData(prev => prev.filter(item => item.id !== id))``
   }
   return (
     <>

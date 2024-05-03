@@ -22,7 +22,7 @@ function Holiday() {
   }
 
   const popHoliday = (id) => {
-    axios.get(`/api/timeAtt/popHoliday?id=${id}`)
+    axios.get(`https://employeebackend-ikfc.onrender.com/api/timeAtt/popHoliday?id=${id}`)
       .then(response => {
         if (!response.data.success) {
           throw new Error();
@@ -75,7 +75,7 @@ function Holiday() {
 
 
   const filterHoliday = () => {
-    axios.get(`/api/timeAtt/getHoliday?year=${year.current.value}&status=${status.current.value}`)
+    axios.get(`https://employeebackend-ikfc.onrender.com/api/timeAtt/getHoliday?year=${year.current.value}&status=${status.current.value}`)
       .then(response => {
         if (!response.data.success) return;
         console.log(response.data.data);
@@ -86,7 +86,7 @@ function Holiday() {
   }
 
   useEffect(() => {
-    axios.get(`/api/timeAtt/getHoliday?year=${year.current.value}&status=${status.current.value}`)
+    axios.get(`https://employeebackend-ikfc.onrender.com/api/timeAtt/getHoliday?year=${year.current.value}&status=${status.current.value}`)
       .then(response => {
         if (!response.data.success) return;
         console.log(response.data.data);
