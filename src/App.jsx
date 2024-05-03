@@ -8,7 +8,6 @@ import axios from 'axios'
 import formatISODate from "../src/utils/DateFormater"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { setShiftDetails } from '../backend/src/controller/timeAttendence.controller'
 function App() {
   const [empTableData, setEmpTableData] = useState([])
   const [shiftTableData, setShiftTableData] = useState([])
