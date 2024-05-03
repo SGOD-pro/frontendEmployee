@@ -102,7 +102,7 @@ function AddForm(props) {
         }
         console.log(data);
         setDisabledBtn(true);
-        axios.post(`/api/timeAtt/addHoliday`, data)
+        axios.post(`https://employeebackend-ikfc.onrender.com/api/timeAtt/addHoliday`, data)
             .then((response) => {
                 const responseData = response.data;
                 console.log(responseData);

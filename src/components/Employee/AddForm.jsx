@@ -229,7 +229,7 @@ function AddForm(props) {
         }
 
         setDisabledBtn(true);
-        axios.post(`/api/employee/${api}`, data, {
+        axios.post(`https://employeebackend-ikfc.onrender.com/api/employee/${api}`, data, {
             headers: {
                 'Content-Type': api === "salary" ? "application/json" : 'multipart/form-data'
             }
