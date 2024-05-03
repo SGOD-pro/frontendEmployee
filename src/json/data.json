@@ -1,0 +1,26 @@
+{
+	"departments": [
+		"Engineering",
+		"Marketing",
+		"Finance",
+		"Human Resources",
+		"Sales",
+		"Research and Development",
+		"Customer Service",
+		"Information Technology",
+		"Operations",
+		"Legal"
+	],
+	"designations": [
+		"Software Engineer",
+		"Product Manager",
+		"UI/UX Designer",
+		"Data Scientist",
+		"Business Analyst",
+		"Quality Assurance Engineer",
+		"Marketing Specialist",
+		"Financial Analyst",
+		"HR Manager",
+		"Sales Representative"
+	]
+}

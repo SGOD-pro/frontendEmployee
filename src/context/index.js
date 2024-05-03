@@ -1,0 +1,1 @@
+export { useEmpData, DataContext, DataContextProvider } from "./TableData"
